@@ -14,9 +14,26 @@
 header {
   grid-column: 2 / auto;
   background-color: pink;
+  padding: 0 30px;
 }
 
 nav {
   grid-row: 1 / -1;
   background-color: palegoldenrod;
+}
+
+header > .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  margin-right: auto;
+  flex: 1;
+}
+
+.top svg:nth-child(3) {
+  margin-left: 100px;
+  background-color: red;
 }
