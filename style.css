@@ -1,7 +1,18 @@
+/* color codes
+    Sunet Orange :
+*/
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  --SunsetOrange: #e16a3d;
+  --Tangerine: #ffa45d;
+  --Pine: #016a6d;
+  --NileBlue: #043e52;
+  /* color: white; */
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 .container {
@@ -13,13 +24,18 @@
 
 header {
   grid-column: 2 / auto;
-  background-color: pink;
+  /* background-color: var(--SunsetOrange); */
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 3px solid var(--SunsetOrange);
+  box-shadow: 0 0 20px var(--NileBlue);
 }
 
 nav {
   grid-row: 1 / -1;
-  background-color: palegoldenrod;
+  background-color: var(--Pine);
 }
 
 header > .top,
@@ -30,20 +46,49 @@ header > .bottom {
   gap: 15px;
 }
 
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
 input,
 .name-container {
   margin-right: auto;
   flex: 1;
 }
 
+.top > input {
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--SunsetOrange);
+}
+
 header button {
   width: 120px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  outline: none;
+  border-style: none;
+  color: white;
+  background-color: var(--SunsetOrange);
 }
 .bottom button:nth-child(4) {
   margin: 0 20px;
 }
 
-.top svg:nth-child(3) {
+.bell {
   margin-left: 100px;
-  background-color: red;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--Pine);
+}
+.avatar2 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--Pine);
 }
