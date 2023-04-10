@@ -126,6 +126,15 @@ nav {
   fill: var(--SunsetOrange);
 }
 
+nav .middle,
+nav .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  margin-left: 20px;
+}
+
 nav svg {
   fill: white;
 }
@@ -141,15 +150,6 @@ nav div {
   align-items: center;
   transition: 0.3s;
 }
-nav .middle,
-nav .bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 30px;
-  margin-left: 20px;
-}
-
 nav div > div:hover {
   transform: scale(1.2);
   text-shadow: 0 0 3px var(--SunsetOrange);
@@ -171,6 +171,33 @@ main .left {
   grid-template-rows: min-content;
   align-content: start;
   gap: 20px;
+}
+
+.left .items {
+  border: 2px solid var(--SunsetOrange);
+  border-left: 15px solid var(--NileBlue);
+  border-radius: 10px;
+  height: 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.items h3 {
+  text-shadow: 0 0 10px var(--SunsetOrange);
+}
+
+.left .icon,
+.left svg {
+  align-self: flex-end;
+  margin-left: 20px;
+}
+
+.left > h3 {
+  align-self: center;
+  grid-column: 1 / -1;
 }
 
 main .right {
@@ -208,33 +235,6 @@ main .right {
 .right > div:nth-child(2) {
   height: 400px;
   margin-bottom: auto;
-}
-
-.left .items {
-  border: 2px solid var(--SunsetOrange);
-  border-left: 15px solid var(--NileBlue);
-  border-radius: 10px;
-  height: 300px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.items h3 {
-  text-shadow: 0 0 10px var(--SunsetOrange);
-}
-
-.left .icon,
-.left svg {
-  align-self: flex-end;
-  margin-left: 20px;
-}
-
-.left > h3 {
-  align-self: center;
-  grid-column: 1 / -1;
 }
 
 .right .trend-container {
