@@ -10,16 +10,24 @@
   --Tangerine: #ffa45d;
   --Pine: #016a6d;
   --NileBlue: #043e52;
-  color: var(--NileBlue);
-  font-weight: 900;
+  font-size: 1.1rem;
   letter-spacing: 1px;
+}
+
+body {
+  background-color: var(--Pine);
+  color: var(--NileBlue);
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
-  height: 1080px;
+  margin: 10px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 0 0 6px 6px black;
+  overflow: hidden;
 }
 
 header {
@@ -34,12 +42,12 @@ header {
 
 nav {
   grid-row: 1 / -1;
-  background-color: white;
-  border-right: 1px solid var(--SunsetOrange);
+  background-color: var(--NileBlue);
   display: flex;
   flex-direction: column;
   gap: 80px;
   padding: 20px 20px;
+  color: whitesmoke;
 }
 
 main {
@@ -67,7 +75,8 @@ main .right {
 .right > div {
   width: 90%;
   flex: 1;
-  background-color: #ffa45d;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
 .right > div:nth-child(2) {
@@ -75,7 +84,8 @@ main .right {
 }
 
 .left .items {
-  background-color: red;
+  border: 1px solid black;
+  border-radius: 10px;
   height: 300px;
 }
 
@@ -98,6 +108,10 @@ svg {
   fill: var(--NileBlue);
 }
 
+nav svg {
+  fill: white;
+}
+
 input,
 .name-container {
   margin-right: auto;
@@ -116,6 +130,7 @@ header button {
   padding: 5px 10px;
   outline: none;
   border-style: none;
+  color: var(--NileBlue);
   background-color: var(--SunsetOrange);
 }
 .bottom button:nth-child(4) {
