@@ -22,15 +22,25 @@ nav {
   background-color: palegoldenrod;
 }
 
-header > .top {
+header > .top,
+header > .bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 
-input {
+input,
+.name-container {
   margin-right: auto;
   flex: 1;
+}
+
+header button {
+  width: 120px;
+}
+.bottom button:nth-child(4) {
+  margin: 0 20px;
 }
 
 .top svg:nth-child(3) {
