@@ -7,7 +7,8 @@
   --NileBlue: #043e52;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  font-family: "Special Elite", cursive;
+  /* font-family: "Special Elite", cursive; */
+  font-family: "Raleway", sans-serif;
 }
 
 body {
@@ -187,6 +188,10 @@ main .left {
 
 .items h3 {
   text-shadow: 0 0 10px var(--SunsetOrange);
+}
+
+.items p {
+  font-size: 0.9rem;
 }
 
 .left .icon,
